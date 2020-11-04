@@ -90,7 +90,7 @@ db.inventory.find(
 //Documentos donde uom sea in y qty sea 25 o 50
 db.inventory.find(
     {
-        "size.uom": "in",
-        qty: { $in: [ 25, 50]}
+        "size.uom": "cm",
+        qty: { $in: [ 45, 50]}
     }
 ).pretty()
